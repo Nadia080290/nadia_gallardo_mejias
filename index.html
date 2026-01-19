@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Tienda de Comercio Electrónico</title>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" id="product-search" placeholder="Buscar producto" />
+
+    <!-- Filtros agregados -->
+    <select id="category-filter" aria-label="Filtrar por categoría">
+      <option value="">Todas</option>
+      <option value="ninguna">Ninguna</option>
+      <option value="electronica">Electrónica</option>
+      <option value="hogar">Hogar</option>
+      <option value="moda">Moda</option>
+    </select>
+
+    <input type="number" id="min-price" placeholder="Min $" min="0" step="1000" />
+    <input type="number" id="max-price" placeholder="Max $" min="0" step="1000" />
+
+    <button id="btn-search" onclick="searchProducts()">Buscar</button>
+  </div>
+
+  <div id="results-container">
+    <!-- Los resultados de la búsqueda se mostrarán aquí -->
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

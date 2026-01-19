@@ -1,0 +1,38 @@
+/* Contenedor de búsqueda y filtros */
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+  display: grid;
+  gap: 8px;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 180px 130px 130px 110px;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* Resultados */
+#results-container {
+  margin: 20px auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 0 16px;
+}
+
+/* Tarjeta simple de producto */
+.product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 12px;
+  background: #fff;
+}
+
+.product-card h4 {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+.muted { color: #6b7280; font-size: .9rem; }
+.price { margin-top: 6px; font-weight: 700; }
+
